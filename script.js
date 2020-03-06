@@ -49,5 +49,3 @@ function reset() {
 }
 
 makeBoxes(24);
-
-console.log('.............ending');
