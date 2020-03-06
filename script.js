@@ -27,9 +27,22 @@ function makeDarker(target) {
 	target.style.opacity = currentOpacity;
 }
 
+function clickEvent() {
+  window['optimizely'] = window['optimizely'] || [];
+  window['optimizely'].push({
+    type: "event",
+    eventName: "custom_book_click",
+    tags: {
+      revenue: 0, // Optional in cents as integer (500 == $5.00)
+      value: 0.00 // Optional as float
+    }
+  });
+}
+
 let resetBtn = document.querySelector('#reset');
 resetBtn.addEventListener('click', reset);
 function reset() {
+  clickEvent();
 	container.innerHTML = '';
 	makeBoxes(askUser());
 }
