@@ -42,9 +42,12 @@ function clickEvent() {
 let resetBtn = document.querySelector('#reset');
 resetBtn.addEventListener('click', reset);
 function reset() {
+  console.log('....resettting');
   clickEvent();
 	container.innerHTML = '';
 	makeBoxes(askUser());
 }
 
 makeBoxes(24);
+
+console.log('.............ending');
