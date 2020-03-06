@@ -1,0 +1,54 @@
+@font-face {
+	font-family: roadrage;
+	src: url('Road_Rage.otf');
+}
+
+h1 {
+	font-family: roadrage;
+	margin: auto;
+	width: 80%;
+}
+
+img {
+	float: right;
+	width: 30em;
+}
+
+#background {
+	width: 70em;
+	height: 70em;
+	background-image: url('https://vignette.wikia.nocookie.net/simpsons/images/1/1b/The_simpsons_tv.png/revision/latest/scale-to-width-down/640?cb=20090831145451');
+	background-repeat: no-repeat;
+	position: absolute;
+}
+
+#container {
+	width: 31em;
+	height: 25em;
+	display: grid;
+	margin: auto;
+	border: 0px white solid;
+	background-color: white;
+	position: absolute;
+	top: 37px;
+	left: 32px;
+}
+
+button {
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #323995;
+	color: white;
+	position: absolute;
+	top: 140px;
+	left: 585px;
+	z-index: 3;
+	transform: rotate(-65deg);
+	border: none;
+	font-weight: bold;
+}
+
+.box {
+	background-color: black;
+	opacity: .1;
+}
